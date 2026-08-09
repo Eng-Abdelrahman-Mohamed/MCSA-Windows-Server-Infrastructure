@@ -1,18 +1,12 @@
 # Group Policy
 
-The evidence shows two distinct Group Policy activities: **Group Policy Management** and **GPO security validation**.
+The evidence shows two distinct Group Policy activities: **Management** and **GPO security validation**.
 
-## Group Policy Management
-
-**Screenshot:** `08-group-policy-management.png`  
-*Group Policy Management view.*
+## Management
 
 ![Group Policy Management](../screenshots/08-group-policy-management.png)
 
 ## GPO Security Validation
-
-**Screenshot:** `09-gpo-security-validation.png.png`  
-*GPO security-validation evidence.*
 
 ![GPO Security Validation](../screenshots/09-gpo-security-validation.png.png)
 
