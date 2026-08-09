@@ -208,7 +208,7 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 
 ![DFS Replication](screenshots/07-dfs-replication.png)
 
-### Policy Management
+### Group Policy
 
 **Group Policy Management**  
 *Group Policy Management view.*
