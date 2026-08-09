@@ -21,7 +21,6 @@
 - [Lab Environment](#lab-environment)
 - [Technologies & Services](#technologies--services)
 - [Infrastructure Overview](#infrastructure-overview)
-- [Implemented Features](#implemented-features)
 - [Testing & Verification](#testing--verification)
 - [Evidence Gallery](#evidence-gallery)
 - [Documentation](#documentation)
@@ -93,11 +92,8 @@ A high-level evidence-based view is documented in [Architecture](docs/architectu
 Windows Client(s)
       │
       ├── DHCP / IP Configuration
-      │
       ├── DNS / Directory Services
-      │
       ├── Group Policy Validation
-      │
       └── RRAS / VPN & Connectivity Testing
                │
                ▼
@@ -111,20 +107,6 @@ Windows Client(s)
 ```
 
 > **Important:** This is a high-level evidence-based view, not a complete physical network diagram. Exact IP addresses, hostnames, routes, server counts, and topology details are intentionally not assumed.
-
-## Implemented Features
-
-- Windows Server role and service administration through Server Manager.
-- Active Directory OU and user-management activity.
-- DNS role visibility.
-- DHCP client IP allocation and release/renew activity.
-- DHCP client restrictions and client/server DHCP-related views.
-- DHCP failover views.
-- DFS Namespace and DFS Replication administration.
-- Group Policy management and security validation.
-- RRAS/VPN server and client activity.
-- Client routing/connectivity testing.
-- Server and client system/data-folder verification.
 
 ## 🧪 Testing & Verification
 
@@ -184,10 +166,10 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 
 ### DHCP & Failover
 
-**DHCP Failover**  
-*DHCP failover administration view.*
+**DHCP Failover — Primary View**  
+*DHCP failover administration evidence.*
 
-![DHCP Failover](screenshots/03-dhcp-failover.png)
+![DHCP Failover Primary View](screenshots/03-dhcp-failover.png)
 
 **DHCP Client IP Allocation**  
 *Client-side IP allocation evidence.*
@@ -199,10 +181,10 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 
 ![DHCP Release and Renew](screenshots/05-dhcp-release-renew.png)
 
-**DHCP Failover — Additional View**  
-*Additional DHCP failover administration view.*
+**DHCP Failover — Second Evidence View**  
+*Additional DHCP failover administration evidence.*
 
-![DHCP Failover Additional View](screenshots/17-dhcp-failover.png)
+![DHCP Failover Second Evidence View](screenshots/17-dhcp-failover.png)
 
 **DHCP Client Restrictions**  
 *DHCP client restriction configuration/evidence view.*
@@ -214,7 +196,7 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 
 ![DHCP Client Server Data](screenshots/21-dhcp-client-server-data.png)
 
-### DFS
+### DFS Services
 
 **DFS Namespace**  
 *DFS Namespace administration view.*
@@ -226,7 +208,7 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 
 ![DFS Replication](screenshots/07-dfs-replication.png)
 
-### Group Policy
+### Policy Management
 
 **Group Policy Management**  
 *Group Policy Management view.*
@@ -234,7 +216,7 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 ![Group Policy Management](screenshots/08-group-policy-management.png)
 
 **GPO Security Validation**  
-*GPO security validation evidence.*
+*GPO security-validation evidence.*
 
 ![GPO Security Validation](screenshots/09-gpo-security-validation.png.png)
 
