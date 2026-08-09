@@ -2,7 +2,7 @@
 
 DNS is visibly listed as an installed and manageable role in the PDC Server Manager view.
 
-- [01-pdc-server-manager.png](../screenshots/01-pdc-server-manager.png)
+![ 01-pdc-server-manager.png ](../screenshots/01-pdc-server-manager.png)
 
 ## Evidence Summary
 
