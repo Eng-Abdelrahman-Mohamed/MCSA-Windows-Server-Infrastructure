@@ -23,6 +23,7 @@
 - [Documentation](#documentation)
 - [Repository Structure](#repository-structure)
 - [Skills Demonstrated](#skills-demonstrated)
+- [Author](#author)
 - [Conclusion](#conclusion)
 
 ## Overview
@@ -268,6 +269,14 @@ MCSA-Windows-Server-Infrastructure/
 - RRAS / VPN and routing workflows
 - Client/server troubleshooting and connectivity verification
 - Technical documentation based on implementation evidence
+
+## Author
+
+**Abdelrahman Mohamed**  
+Electrical Engineering Student | Telecommunications & Electronics
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/abdelrahman-mhmed)
+- 💻 [GitHub](https://github.com/Eng-Abdelrahman-Mohamed)
 
 ## Conclusion
 
