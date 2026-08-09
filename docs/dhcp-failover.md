@@ -2,8 +2,8 @@
 
 Two separate evidence files are labelled as DHCP failover views:
 
-- [03-dhcp-failover.png](../screenshots/03-dhcp-failover.png)
-- [17-dhcp-failover.png](../screenshots/17-dhcp-failover.png)
+![ 03-dhcp-failover.png ](../screenshots/03-dhcp-failover.png)
+![ 17-dhcp-failover.png ](../screenshots/17-dhcp-failover.png)
 
 ## Evidence Summary
 
