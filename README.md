@@ -1,6 +1,9 @@
 # MCSA Windows Server Infrastructure Lab
 
-> A practical Windows Server infrastructure lab built in VMware Workstation and documented through 21 screenshots of the implemented environment.
+<p align="center">
+  <strong>A hands-on Windows Server infrastructure lab built in VMware Workstation</strong><br>
+  Active Directory, DNS, DHCP, DFS, Group Policy, RRAS/VPN, and client-side validation
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/VMware-Workstation-607078?style=for-the-badge&logo=vmware&logoColor=white" alt="VMware Workstation">
@@ -10,9 +13,10 @@
   <img src="https://img.shields.io/badge/RRAS%20%7C%20VPN-Remote%20Access-333333?style=for-the-badge" alt="RRAS and VPN">
 </p>
 
-## Quick Navigation
+## 🧭 Quick Navigation
 
 - [Overview](#overview)
+- [Project Highlights](#-project-highlights)
 - [Objectives](#objectives)
 - [Lab Environment](#lab-environment)
 - [Technologies & Services](#technologies--services)
@@ -24,13 +28,23 @@
 - [Repository Structure](#repository-structure)
 - [Skills Demonstrated](#skills-demonstrated)
 - [Author](#author)
-- [Conclusion](#conclusion)
 
 ## Overview
 
-This repository documents a hands-on Windows Server infrastructure lab. The screenshots are treated as the primary source of truth for the roles, services, administrative views, and validation activities represented in the project.
+This repository documents a hands-on Windows Server infrastructure lab. The 21 screenshots are treated as the primary source of truth for the roles, services, administrative views, and validation activities represented in the project.
 
 The project is a **training and portfolio lab** related to Windows Server/MCSA technologies. It does not claim an MCSA certification.
+
+## 🚀 Project Highlights
+
+| Area | Demonstrated Work |
+|---|---|
+| 🏢 **Directory Services** | Active Directory Domain Services, OUs, and user-management activity |
+| 🌐 **Network Services** | DNS, DHCP, DHCP client/server activity, and DHCP failover |
+| 📁 **File Services** | DFS Namespace, DFS Replication, and server/data-folder views |
+| 🔐 **Policy & Security** | Group Policy management and security validation |
+| 🔄 **Remote Access** | RRAS/VPN server and client activity |
+| 🧪 **Verification** | Client IP configuration, release/renew, routing/connectivity, and service validation |
 
 ## Objectives
 
@@ -73,7 +87,30 @@ The evidence supports a Windows Server lab containing directory services, DNS, D
 
 A high-level evidence-based view is documented in [Architecture](docs/architecture.md).
 
-> **Important:** the architecture documentation intentionally avoids inventing IP addresses, hostnames, routes, server counts, or topology details that are not established by the screenshots.
+### Evidence-Based Service Flow
+
+```text
+Windows Client(s)
+      │
+      ├── DHCP / IP Configuration
+      │
+      ├── DNS / Directory Services
+      │
+      ├── Group Policy Validation
+      │
+      └── RRAS / VPN & Connectivity Testing
+               │
+               ▼
+      Windows Server Infrastructure
+               │
+      ├── Active Directory
+      ├── DNS
+      ├── DHCP / Failover
+      ├── DFS Namespace / Replication
+      └── File / Data Services
+```
+
+> **Important:** This is a high-level evidence-based view, not a complete physical network diagram. Exact IP addresses, hostnames, routes, server counts, and topology details are intentionally not assumed.
 
 ## Implemented Features
 
@@ -89,7 +126,7 @@ A high-level evidence-based view is documented in [Architecture](docs/architectu
 - Client routing/connectivity testing.
 - Server and client system/data-folder verification.
 
-## Testing & Verification
+## 🧪 Testing & Verification
 
 Validation activities are documented in [Testing & Verification](docs/testing.md), including:
 
@@ -104,7 +141,7 @@ Validation activities are documented in [Testing & Verification](docs/testing.md
 
 Where a screenshot does not clearly establish an exact result or value, the documentation states **Not confirmed from the available evidence.**
 
-## Evidence Gallery
+## 📸 Evidence Gallery
 
 All 21 screenshots are displayed directly below as visual evidence. The original filenames are preserved.
 
@@ -223,7 +260,7 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 
 ![VPN Client IP Configuration](screenshots/19-vpn-client-ipconfig.png)
 
-## Documentation
+## 📚 Documentation
 
 | Document | Coverage |
 |---|---|
@@ -237,7 +274,7 @@ All 21 screenshots are displayed directly below as visual evidence. The original
 | [RRAS / VPN](docs/rras-vpn.md) | VPN, remote access, and routing evidence |
 | [Testing](docs/testing.md) | Consolidated testing and verification matrix |
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```text
 MCSA-Windows-Server-Infrastructure/
@@ -258,7 +295,7 @@ MCSA-Windows-Server-Infrastructure/
     └── testing.md
 ```
 
-## Skills Demonstrated
+## 💡 Skills Demonstrated
 
 - Windows Server administration
 - Active Directory and OU/user management
@@ -270,14 +307,16 @@ MCSA-Windows-Server-Infrastructure/
 - Client/server troubleshooting and connectivity verification
 - Technical documentation based on implementation evidence
 
-## Author
+## 👨‍💻 Author
 
 **Abdelrahman Mohamed**  
 Electrical Engineering Student | Telecommunications & Electronics
 
+Interested in **Computer Networks, Network Engineering, Routing & Switching, and Enterprise Infrastructure**.
+
 - 🔗 [LinkedIn](https://www.linkedin.com/in/abdelrahman-mhmed)
 - 💻 [GitHub](https://github.com/Eng-Abdelrahman-Mohamed)
 
-## Conclusion
+---
 
-This repository provides a structured portfolio record of a practical Windows Server infrastructure lab. The documentation focuses on what can actually be established from the 21 screenshots rather than filling gaps with assumed configurations.
+> **Note:** This documentation describes the technologies and activities evidenced by the Windows Server lab and included screenshots. It avoids claiming configuration details that are not directly supported by the available project evidence.
