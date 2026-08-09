@@ -22,15 +22,15 @@ Exact Windows versions, VM count, hardware resources, IP ranges, domain name, an
 
 | Technology | Purpose | Evidence |
 |---|---|---|
-| Active Directory Domain Services | Directory and identity management | [Server role](01-pdc-server-manager.png), [OU and users](02-active-directory-ous-users.png) |
-| DNS | Name-service role shown in Server Manager | [DNS role](01-pdc-server-manager.png) |
-| DHCP | Dynamic client addressing and validation | [Allocation](04-dhcp-client-ip-allocation.png), [release/renew](05-dhcp-release-renew.png) |
-| DHCP Failover | Failover configuration/status views | [View 1](03-dhcp-failover.png), [View 2](17-dhcp-failover.png) |
-| DFS Namespace | Namespace management | [DFS Namespace](06-dfs-namespace.png) |
-| DFS Replication | Replication management | [DFS Replication](07-dfs-replication.png) |
-| Group Policy | GPO management and validation | [Management](08-group-policy-management.png), [validation](09-gpo-security-validation.png.png) |
-| RRAS/VPN | Server/client remote-access and routing evidence | [Server/client](10-vpn-server-active-client.png), [routing test](11-vpn-client-routing-test.png) |
-| Server and file services | Server roles and data-folder views | [Server Manager](01-pdc-server-manager.png), [data folders](13-server-data-folders.png) |
+| Active Directory Domain Services | Directory and identity management | [Server role](screenshots/01-pdc-server-manager.png), [OU and users](screenshots/02-active-directory-ous-users.png) |
+| DNS | Name-service role shown in Server Manager | [DNS role](screenshots/01-pdc-server-manager.png) |
+| DHCP | Dynamic client addressing and validation | [Allocation](screenshots/04-dhcp-client-ip-allocation.png), [release/renew](screenshots/05-dhcp-release-renew.png) |
+| DHCP Failover | Failover configuration/status views | [View 1](screenshots/03-dhcp-failover.png), [View 2](screenshots/17-dhcp-failover.png) |
+| DFS Namespace | Namespace management | [DFS Namespace](screenshots/06-dfs-namespace.png) |
+| DFS Replication | Replication management | [DFS Replication](screenshots/07-dfs-replication.png) |
+| Group Policy | GPO management and validation | [Management](screenshots/08-group-policy-management.png), [validation](screenshots/09-gpo-security-validation.png.png) |
+| RRAS/VPN | Server/client remote-access and routing evidence | [Server/client](screenshots/10-vpn-server-active-client.png), [routing test](screenshots/11-vpn-client-routing-test.png) |
+| Server and file services | Server roles and data-folder views | [Server Manager](screenshots/01-pdc-server-manager.png), [data folders](screenshots/13-server-data-folders.png) |
 
 Exact settings, protocols, addresses, credentials, and command outputs are **Not confirmed from the available evidence.**
 
@@ -56,11 +56,11 @@ The evidence represents DHCP allocation and release/renew, DHCP failover views, 
 
 All 21 screenshots remain at the repository root with their existing filenames.
 
-- Core/server/AD: [01](01-pdc-server-manager.png), [02](02-active-directory-ous-users.png), [12](12-pdc-this-pc.png), [13](13-server-data-folders.png), [14](14-adc-active-directory-users.png), [15](15-adc-this-pc.png), [16](16-adc-server-data.png)
-- DHCP: [03](03-dhcp-failover.png), [04](04-dhcp-client-ip-allocation.png), [05](05-dhcp-release-renew.png), [17](17-dhcp-failover.png), [20](20-dhcp-client-restrictions.png), [21](21-dhcp-client-server-data.png)
-- DFS: [06](06-dfs-namespace.png), [07](07-dfs-replication.png)
-- Group Policy: [08](08-group-policy-management.png), [09](09-gpo-security-validation.png.png)
-- VPN/RRAS: [10](10-vpn-server-active-client.png), [11](11-vpn-client-routing-test.png), [18](18-vpn-server-manager.png), [19](19-vpn-client-ipconfig.png)
+- Core/server/AD: [01](screenshots/01-pdc-server-manager.png), [02](screenshots/02-active-directory-ous-users.png), [12](screenshots/12-pdc-this-pc.png), [13](screenshots/13-server-data-folders.png), [14](screenshots/14-adc-active-directory-users.png), [15](screenshots/15-adc-this-pc.png), [16](screenshots/16-adc-server-data.png)
+- DHCP: [03](screenshots/03-dhcp-failover.png), [04](screenshots/04-dhcp-client-ip-allocation.png), [05](screenshots/05-dhcp-release-renew.png), [17](screenshots/17-dhcp-failover.png), [20](screenshots/20-dhcp-client-restrictions.png), [21](screenshots/21-dhcp-client-server-data.png)
+- DFS: [06](screenshots/06-dfs-namespace.png), [07](screenshots/07-dfs-replication.png)
+- Group Policy: [08](screenshots/08-group-policy-management.png), [09](screenshots/09-gpo-security-validation.png.png)
+- VPN/RRAS: [10](screenshots/10-vpn-server-active-client.png), [11](screenshots/11-vpn-client-routing-test.png), [18](screenshots/18-vpn-server-manager.png), [19](screenshots/19-vpn-client-ipconfig.png)
 
 ## Repository Structure
 
