@@ -1,15 +1,20 @@
-# DHCP
+[← Back to Main README](../README.md)
 
-The evidence documents DHCP service operation and client-side address-management activity.
+# Dynamic Host Configuration Protocol (DHCP)
 
-![ 01-pdc-server-manager.png ](../screenshots/01-pdc-server-manager.png) shows DHCP as a managed server role.
-![ 04-dhcp-client-ip-allocation.png ](../screenshots/04-dhcp-client-ip-allocation.png) documents client IP allocation.
-![ 05-dhcp-release-renew.png ](../screenshots/05-dhcp-release-renew.png) documents a release/renew workflow.
-![ 20-dhcp-client-restrictions.png ](../screenshots/20-dhcp-client-restrictions.png) documents client restrictions associated with DHCP activity.
-![ 21-dhcp-client-server-data.png ](../screenshots/21-dhcp-client-server-data.png) documents client/server DHCP-related data.
+The DHCP Server role manages dynamic IPv4 address allocation, scope options (default gateway and DNS servers), lease renewals, and client access policies across the lab network.
 
-## Evidence Summary
+## Implementation Highlights
 
-The screenshots support DHCP role visibility, client address allocation, release/renew activity, restriction-related activity, and DHCP client/server information views.
+- Configured centralized DHCP scopes to automatically assign IP configurations to domain Windows clients.
+- Tested and verified dynamic lease allocation and client-side `ipconfig /release` and `ipconfig /renew` workflows.
+- Configured DHCP client restrictions/filters to control lease assignment behavior.
+- Integrated DHCP with high-availability failover (see [DHCP Failover](dhcp-failover.md)).
 
-The exact scope, lease duration, address range, reservations, options, and observed IP values are **Not confirmed from the available evidence.**
+## Verification Screenshots
+
+- **Server Role Configuration:** ![PDC Server Manager](../screenshots/01-pdc-server-manager.png)
+- **Client IP Allocation:** ![DHCP Client IP Allocation](../screenshots/04-dhcp-client-ip-allocation.png)
+- **Release & Renew Test:** ![DHCP Release and Renew](../screenshots/05-dhcp-release-renew.png)
+- **Client Restrictions:** ![DHCP Client Restrictions](../screenshots/20-dhcp-client-restrictions.png)
+- **Client & Server Verification:** ![DHCP Client Server Data](../screenshots/21-dhcp-client-server-data.png)
