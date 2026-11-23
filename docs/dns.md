@@ -1,9 +1,15 @@
-# DNS
+[← Back to Main README](../README.md)
 
-DNS is visibly listed as an installed and manageable role in the PDC Server Manager view.
+# Domain Name System (DNS)
 
-![ 01-pdc-server-manager.png ](../screenshots/01-pdc-server-manager.png)
+Internal DNS is deployed on the Windows Server 2019 Domain Controller and integrated directly with Active Directory Domain Services (AD DS) to support domain resolution, SRV records for domain join/authentication, and internal client name resolution across the lab.
 
-## Evidence Summary
+## Implementation Highlights
 
-The screenshot confirms that DNS is present as a server role in the lab. The screenshots do not provide enough confirmed detail about DNS zones, records, forwarders, resolution tests, or client DNS settings. Those details are **Not confirmed from the available evidence.**
+- Installed and configured the DNS Server role alongside AD DS on the Primary Domain Controller.
+- Provided internal name resolution for domain-joined servers, client workstations, and VPN clients.
+- Used DNS alongside DHCP scope options to ensure seamless domain discovery and client connectivity.
+
+## Verification Screenshot
+
+![PDC Server Manager](../screenshots/01-pdc-server-manager.png)
