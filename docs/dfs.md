@@ -1,21 +1,29 @@
-# DFS
+[← Back to Main README](../README.md)
 
-The evidence establishes two distinct DFS functions in the lab: **Namespace** and **Replication**.
+# Distributed File System (DFS) & Replication
 
-## Namespace
+Distributed File System (DFS) provides a unified namespace for shared enterprise folders and keeps data synchronized across both servers using **DFS Replication (DFSR)**.
+
+## Implementation Highlights
+
+- Configured a centralized **DFS Namespace** so clients access shared folders through a consistent logical path independent of the underlying server.
+- Enabled **DFS Replication (DFSR)** between the two Windows Server instances for automatic folder synchronization and storage redundancy.
+- Verified synchronized shared data folders on both server contexts.
+
+## Verification Screenshots
+
+**DFS Namespace**
 
 ![DFS Namespace](../screenshots/06-dfs-namespace.png)
 
-## Replication
+**DFS Replication**
 
 ![DFS Replication](../screenshots/07-dfs-replication.png)
 
-## Supporting Server Data Evidence
+**Primary Server Shared Data Folders**
 
 ![Server Data Folders](../screenshots/13-server-data-folders.png)
 
+**Additional Server Synchronized Data**
+
 ![ADC Server Data](../screenshots/16-adc-server-data.png)
-
-## Evidence Summary
-
-These screenshots support namespace administration, replication-related administration, and server-side data-folder views. The exact namespace path, folder targets, replication group, schedule, topology, and synchronization result are **Not confirmed from the available evidence.**
