@@ -26,6 +26,7 @@
 - [Documentation](#documentation)
 - [Repository Structure](#repository-structure)
 - [Skills Demonstrated](#skills-demonstrated)
+- [Related Lab Project](#-related-lab-project)
 - [Author](#author)
 
 ## Overview
@@ -48,8 +49,8 @@ This repository documents a hands-on Windows Server 2019 enterprise infrastructu
 - Build and manage a Windows Server infrastructure in VMware Workstation.
 - Configure and demonstrate directory, DNS, DHCP, file-service, policy, and remote-access functionality.
 - Work with multiple server contexts and Windows client-side validation.
-- Verify selected configuration and connectivity workflows using administrative tools and client tests.
-- Document the implemented work in a clear, evidence-based format.
+- Verify configuration and connectivity workflows using administrative tools and client tests.
+- Document the implemented architecture clearly across dedicated service guides.
 
 ## Lab Environment
 
@@ -72,7 +73,7 @@ This repository documents a hands-on Windows Server 2019 enterprise infrastructu
 | DFS Replication | Replication administration | [07](screenshots/07-dfs-replication.png) |
 | Group Policy | GPO management and validation | [08](screenshots/08-group-policy-management.png) · [09](screenshots/09-gpo-security-validation.png.png) |
 | RRAS / VPN | Remote-access and routing activity | [10](screenshots/10-vpn-server-active-client.png) · [11](screenshots/11-vpn-client-routing-test.png) · [18](screenshots/18-vpn-server-manager.png) |
-| File & Storage Services | Server/data-folder evidence | [01](screenshots/01-pdc-server-manager.png) · [13](screenshots/13-server-data-folders.png) · [16](screenshots/16-adc-server-data.png) |
+| File & Storage Services | Server/data-folder views | [01](screenshots/01-pdc-server-manager.png) · [13](screenshots/13-server-data-folders.png) · [16](screenshots/16-adc-server-data.png) |
 
 ## Infrastructure Overview
 
@@ -110,7 +111,7 @@ Validation activities are documented in [Testing & Verification](docs/testing.md
 - Group Policy validation
 - VPN/RRAS activity
 - Client routing testing
-- DFS and server data evidence
+- DFS and server data shares
 - Active Directory and system-information verification
 
 ## 📸 Evidence Gallery
@@ -161,9 +162,9 @@ All 21 screenshots from the lab are organized below by infrastructure role.
 
 ![DHCP Release and Renew](screenshots/05-dhcp-release-renew.png)
 
-**DHCP Failover — Second Evidence View**
+**DHCP Failover — Second View**
 
-![DHCP Failover Second Evidence View](screenshots/17-dhcp-failover.png)
+![DHCP Failover Second View](screenshots/17-dhcp-failover.png)
 
 **DHCP Client Restrictions**
 
@@ -216,8 +217,8 @@ All 21 screenshots from the lab are organized below by infrastructure role.
 | Document | Coverage |
 |---|---|
 | [Architecture](docs/architecture.md) | Logical infrastructure overview |
-| [Active Directory](docs/active-directory.md) | AD DS, OUs, and user-management |
-| [DNS](docs/dns.md) | DNS role configuration and validation |
+| [Active Directory](docs/active-directory.md) | AD DS, OUs, and user management |
+| [DNS](docs/dns.md) | DNS role configuration and integration |
 | [DHCP](docs/dhcp.md) | Address allocation and DHCP client/server activity |
 | [DHCP Failover](docs/dhcp-failover.md) | DHCP failover configuration |
 | [DFS](docs/dfs.md) | DFS Namespace, Replication, and data shares |
@@ -257,6 +258,11 @@ MCSA-Windows-Server-Infrastructure/
 - RRAS / VPN and routing workflows
 - Client/server troubleshooting and connectivity verification
 - Technical documentation
+
+## 🔗 Related Lab Project
+
+- [**Enterprise Network Architecture**](https://github.com/Eng-Abdelrahman-Mohamed/Enterprise-Network-Architecture) — Companion Cisco Packet Tracer multi-site network simulation (OSPF, EIGRP, eBGP, VLANs, HSRP, LACP, Rapid-PVST+, ACLs, DHCP Snooping, and Port Security).
+- [**Main GitHub Profile**](https://github.com/Eng-Abdelrahman-Mohamed) — Full portfolio, skills, and lab index.
 
 ## 👨‍💻 Author
 
