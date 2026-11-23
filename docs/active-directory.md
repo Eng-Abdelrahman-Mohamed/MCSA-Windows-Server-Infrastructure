@@ -1,13 +1,26 @@
-# Active Directory
+[← Back to Main README](../README.md)
 
-The evidence shows Active Directory Domain Services and directory-management activity in the lab.
+# Active Directory Domain Services (AD DS)
 
-![ 01-pdc-server-manager.png ](../screenshots/01-pdc-server-manager.png) visibly shows the AD DS role in Server Manager on the PDC virtual machine.
-![ 02-active-directory-ous-users.png ](../screenshots/02-active-directory-ous-users.png) documents Organizational Unit and user-management activity.
-![ 14-adc-active-directory-users.png ](../screenshots/14-adc-active-directory-users.png) documents Active Directory user-management activity in the ADC context.
+Active Directory Domain Services (AD DS) forms the core identity and directory layer across the lab, deployed with redundancy across **two Domain Controllers** (Primary Domain Controller and Additional Domain Controller).
 
-## Evidence Summary
+## Implementation Highlights
 
-The screenshots support the presence of directory-service administration, OU/user management, and at least two server contexts labelled PDC and ADC.
+- Deployed AD DS on the Primary Domain Controller alongside DNS, DHCP, and File & Storage Services.
+- Promoted an Additional Domain Controller to provide directory redundancy and AD replication across both servers.
+- Structured hierarchical Organizational Units (OUs), user accounts, and security groups to support Group Policy targeting and clean administration.
+- Verified synchronized directory objects across both Domain Controllers.
 
-The exact domain name, OU hierarchy, user and group membership, domain-controller roles, replication state, and account properties are **Not confirmed from the available evidence.**
+## Verification Screenshots
+
+**Primary Domain Controller — Server Manager Roles**
+
+![PDC Server Manager](../screenshots/01-pdc-server-manager.png)
+
+**Active Directory OUs and Users Management**
+
+![Active Directory OUs and Users](../screenshots/02-active-directory-ous-users.png)
+
+**Additional Domain Controller — Synchronized Users & Directory View**
+
+![ADC Active Directory Users](../screenshots/14-adc-active-directory-users.png)
