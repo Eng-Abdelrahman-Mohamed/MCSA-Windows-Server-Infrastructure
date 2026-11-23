@@ -30,9 +30,7 @@
 
 ## Overview
 
-This repository documents a hands-on Windows Server infrastructure lab. The 21 screenshots are treated as the primary source of truth for the roles, services, administrative views, and validation activities represented in the project.
-
-The project is a **training and portfolio lab** related to Windows Server/MCSA technologies. It does not claim an MCSA certification.
+This repository documents a hands-on Windows Server 2019 enterprise infrastructure lab built in VMware Workstation, featuring 2 Domain Controllers (Primary & Additional), Active Directory Domain Services (AD DS), DNS, High-Availability DHCP Failover, DFS Namespaces & Replication (DFSR), Group Policy Objects (GPOs), and RRAS/VPN, documented with 21 verification screenshots.
 
 ## 🚀 Project Highlights
 
@@ -55,14 +53,12 @@ The project is a **training and portfolio lab** related to Windows Server/MCSA t
 
 ## Lab Environment
 
-| Component | Evidence-based description |
+| Component | Description |
 |---|---|
 | Virtualization | VMware Workstation |
-| Server platform | Windows Server |
-| Server contexts | PDC and ADC are visibly referenced in the screenshots |
-| Client systems | Windows client-side configuration and validation views are present |
-
-Exact Windows versions, VM count, hardware resources, IP ranges, domain name, and complete topology are **Not confirmed from the available evidence.**
+| Server platform | Windows Server 2019 |
+| Server contexts | 2 Domain Controllers (Primary & Additional Domain Controllers) |
+| Client systems | Windows client-side configuration and validation views |
 
 ## Technologies & Services
 
@@ -78,15 +74,13 @@ Exact Windows versions, VM count, hardware resources, IP ranges, domain name, an
 | RRAS / VPN | Remote-access and routing activity | [10](screenshots/10-vpn-server-active-client.png) · [11](screenshots/11-vpn-client-routing-test.png) · [18](screenshots/18-vpn-server-manager.png) |
 | File & Storage Services | Server/data-folder evidence | [01](screenshots/01-pdc-server-manager.png) · [13](screenshots/13-server-data-folders.png) · [16](screenshots/16-adc-server-data.png) |
 
-Exact configuration values, protocols, IP addresses, credentials, commands, and several test outcomes are **Not confirmed from the available evidence.**
-
 ## Infrastructure Overview
 
-The evidence supports a Windows Server lab containing directory services, DNS, DHCP, DFS, Group Policy, file/data services, and RRAS/VPN-related activity, with client-side validation screens.
+The lab covers Windows Server directory services, DNS, DHCP, DFS, Group Policy, file/data services, and RRAS/VPN with client-side validation screens.
 
-A high-level evidence-based view is documented in [Architecture](docs/architecture.md).
+A high-level architecture view is documented in [Architecture](docs/architecture.md).
 
-### Evidence-Based Service Flow
+### Service Flow
 
 ```text
 Windows Client(s)
@@ -106,8 +100,6 @@ Windows Client(s)
       └── File / Data Services
 ```
 
-> **Important:** This is a high-level evidence-based view, not a complete physical network diagram. Exact IP addresses, hostnames, routes, server counts, and topology details are intentionally not assumed.
-
 ## 🧪 Testing & Verification
 
 Validation activities are documented in [Testing & Verification](docs/testing.md), including:
@@ -121,11 +113,9 @@ Validation activities are documented in [Testing & Verification](docs/testing.md
 - DFS and server data evidence
 - Active Directory and system-information verification
 
-Where a screenshot does not clearly establish an exact result or value, the documentation states **Not confirmed from the available evidence.**
-
 ## 📸 Evidence Gallery
 
-All 21 screenshots are displayed directly below as visual evidence. Each screenshot has one concise caption above it; redundant descriptive lines have been removed.
+All 21 screenshots from the lab are organized below by infrastructure role.
 
 ### Server & Active Directory
 
@@ -225,14 +215,14 @@ All 21 screenshots are displayed directly below as visual evidence. Each screens
 
 | Document | Coverage |
 |---|---|
-| [Architecture](docs/architecture.md) | Evidence-based logical infrastructure overview |
-| [Active Directory](docs/active-directory.md) | AD DS, OUs, and user-management evidence |
-| [DNS](docs/dns.md) | DNS role evidence and confirmed limitations |
+| [Architecture](docs/architecture.md) | Logical infrastructure overview |
+| [Active Directory](docs/active-directory.md) | AD DS, OUs, and user-management |
+| [DNS](docs/dns.md) | DNS role configuration and validation |
 | [DHCP](docs/dhcp.md) | Address allocation and DHCP client/server activity |
-| [DHCP Failover](docs/dhcp-failover.md) | DHCP failover evidence |
-| [DFS](docs/dfs.md) | DFS Namespace, Replication, and data evidence |
+| [DHCP Failover](docs/dhcp-failover.md) | DHCP failover configuration |
+| [DFS](docs/dfs.md) | DFS Namespace, Replication, and data shares |
 | [Group Policy](docs/group-policy.md) | GPO management and validation |
-| [RRAS / VPN](docs/rras-vpn.md) | VPN, remote access, and routing evidence |
+| [RRAS / VPN](docs/rras-vpn.md) | VPN, remote access, and routing |
 | [Testing](docs/testing.md) | Consolidated testing and verification matrix |
 
 ## 📁 Repository Structure
@@ -258,26 +248,23 @@ MCSA-Windows-Server-Infrastructure/
 
 ## 💡 Skills Demonstrated
 
-- Windows Server administration
+- Windows Server 2019 administration
 - Active Directory and OU/user management
 - DNS and DHCP administration
-- DHCP failover concepts and administration
+- DHCP failover configuration and administration
 - DFS Namespace and DFS Replication
 - Group Policy management and validation
 - RRAS / VPN and routing workflows
 - Client/server troubleshooting and connectivity verification
-- Technical documentation based on implementation evidence
+- Technical documentation
 
 ## 👨‍💻 Author
 
-**Abdelrahman Mohamed**  
-Electrical Engineering Student | Telecommunications & Electronics
+**Abdelrahman Mohamed AbdelAal**  
+Electronics & Communications Engineering Student | Al-Azhar University (Cairo, Egypt)
 
-Interested in **Computer Networks, Network Engineering, Routing & Switching, and Enterprise Infrastructure**.
+Focused on **Network Engineering (CCNA Track), Enterprise Routing & Switching, Windows Server (MCSA), and IT Support / Helpdesk**.
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/abdelrahman-mhmed)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/abdelrahman-mhmed/)
 - 💻 [GitHub](https://github.com/Eng-Abdelrahman-Mohamed)
-
----
-
-> **Note:** This documentation describes the technologies and activities evidenced by the Windows Server lab and included screenshots. It avoids claiming configuration details that are not directly supported by the available project evidence.
+- 📧 [eng.abdelrahman.abdelaal@gmail.com](mailto:eng.abdelrahman.abdelaal@gmail.com)
